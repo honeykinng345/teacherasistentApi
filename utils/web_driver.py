@@ -23,11 +23,9 @@ class WebDriverHandler:
         self.proxyIp = ip
         self.proxyPort = port
 
-    async def get_or_create_browser_instance(app_id, proxy_ip, proxy_port):
+    async def get_or_create_browser_instance(self, proxy_ip, proxy_port):
         global browser_instances
-        if app_id in browser_instances:
-            return browser_instances[app_id]
-        else:
+        if self not in browser_instances:
             playwright = await async_playwright().start()
             browser = await playwright.chromium.launch(headless=False, args=["--force-dark-mode"])
             context = await browser.new_context()
@@ -35,8 +33,12 @@ class WebDriverHandler:
             await page.goto("https://www.perplexity.ai/")
 
             # Store the instance
-            browser_instances[app_id] = {"browser": browser, "context": context, "page": page}
-            return browser_instances[app_id]
+            browser_instances[self] = {
+                "browser": browser,
+                "context": context,
+                "page": page,
+            }
+        return browser_instances[self]
 
     @classmethod
     async def initialize_playwright_instance(cls, appId, proxyIp, proxyPort):
@@ -46,12 +48,9 @@ class WebDriverHandler:
                 f.write(f"{current_datetime}: initialize_playwright_instance\n")
 
             # Initialize Playwright
-            ua = UserAgent()
-            user_agent = ua.random
-            print(user_agent)
             playwright = await async_playwright().start()
             browser = await playwright.chromium.launch(headless=False)
-            context = await browser.new_context(color_scheme='dark')
+            context = await browser.new_context()
             page = await context.new_page()
 
             # # Proxy settings
@@ -68,6 +67,7 @@ class WebDriverHandler:
             dictBrowser = {"browser": browser,
                            "context": context,
                            "page": page}
+            print(dictBrowser)
 
             await page.goto("https://www.perplexity.ai/")
 
@@ -78,4 +78,4 @@ class WebDriverHandler:
                 current_datetime = datetime.now()
                 f.write(f"{current_datetime}: initialize_playwright_instance Exception\n")
                 f.write(f"{current_datetime}: {str(e)}\n")
-                return  JsonResponse.getErrorResponse(message=e,code=400)
+                return JsonResponse.getErrorResponse(message=e, code=400)
