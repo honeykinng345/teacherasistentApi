@@ -102,8 +102,9 @@ async def amazon_webpage():
     try:
         userObject = await UserHandler.checkUserAlreadyExistOrNot(app_id)
         print(f"userObject: {userObject}, Type: {type(userObject)}")
-        if isinstance(userObject, tuple):
-            userObject = userObject[0]  # Assuming the first element is the `User` object
+
+        if isinstance(userObject, dict) and "error" in userObject:
+            return jsonify(userObject), 400
 
         response = await PerplexityHandler.playwright_worker(user=userObject, query=query)
         # Check if there was an error

@@ -47,6 +47,7 @@ class WebDriverHandler:
                 current_datetime = datetime.now()
                 f.write(f"{current_datetime}: initialize_playwright_instance\n")
 
+            print("Enter initialize_playwright_instance")
             # Initialize Playwright
             playwright = await async_playwright().start()
             browser = await playwright.chromium.launch(headless=False)
@@ -78,4 +79,6 @@ class WebDriverHandler:
                 current_datetime = datetime.now()
                 f.write(f"{current_datetime}: initialize_playwright_instance Exception\n")
                 f.write(f"{current_datetime}: {str(e)}\n")
+                print(f"Error initialize_playwright_instance {e}")
+
                 return JsonResponse.getErrorResponse(message=e, code=400)

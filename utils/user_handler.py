@@ -28,6 +28,7 @@ class UserHandler:
                 page = getBrowserData["page"]
                 context = getBrowserData["context"]
                 Global.user_map[appId] = User(appId, "12345", webDevBrowser=browser, webPage=page, webContext=context)
+
             else:
                 with open("ScreenFlow.txt", "a") as f:
                     current_datetime = datetime.now()
