@@ -4,7 +4,6 @@ import asyncio
 from datetime import datetime
 from playwright.async_api import async_playwright
 import logging
-import os
 
 from preplexity_handler.perplexity_web_scrapper import PerplexityHandler
 from utils.user_handler import UserHandler
@@ -120,5 +119,4 @@ async def amazon_webpage():
 
 
 if __name__ == '__main__':
-    os.system("playwright install")
     app.run(debug=False)
