@@ -14,52 +14,52 @@ app = Quart(__name__)
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-# Dictionary to store user-specific Playwright instances
-browser_instances = {}
-# Create an asyncio task queue
-task_queue = asyncio.Queue()
-
-
-# Async function to get or create browser instance
-async def get_or_create_browser_instance(app_id, proxy_ip, proxy_port):
-    global browser_instances
-    if app_id in browser_instances:
-        return browser_instances[app_id]
-    else:
-        playwright = await async_playwright().start()
-        browser = await playwright.chromium.launch(headless=True)
-        context = await browser.new_context()
-        page = await context.new_page()
-        await page.goto("https://www.perplexity.ai/")
-
-        # Store the instance
-        browser_instances[app_id] = {"browser": browser, "context": context, "page": page}
-        return browser_instances[app_id]
-
-
-# Async function to run the Playwright logic
-async def playwright_worker(app_id, query):
-    try:
-        user_browser = await get_or_create_browser_instance(app_id, "123.45.67.89", "434")
-        page = user_browser["page"]
-
-        # Perform scraping actions
-        await page.screenshot(path="perplexity.png")
-        await page.fill(".overflow-auto", query)
-        await page.screenshot(path="perplexity1.png")
-
-        if await page.is_visible("button[aria-label='Submit']"):
-            await page.click("button[aria-label='Submit']")
-            await page.screenshot(path="p4.png")
-
-        # Wait and extract response
-        await page.wait_for_timeout(7000)
-        return [
-            await div.inner_text()
-            for div in await page.query_selector_all("div.prose")
-        ]
-    except Exception as e:
-        return {"error": str(e)}
+# # Dictionary to store user-specific Playwright instances
+# browser_instances = {}
+# # Create an asyncio task queue
+# task_queue = asyncio.Queue()
+#
+#
+# # Async function to get or create browser instance
+# async def get_or_create_browser_instance(app_id, proxy_ip, proxy_port):
+#     global browser_instances
+#     if app_id in browser_instances:
+#         return browser_instances[app_id]
+#     else:
+#         playwright = await async_playwright().start()
+#         browser = await playwright.chromium.launch(headless=True)
+#         context = await browser.new_context()
+#         page = await context.new_page()
+#         await page.goto("https://www.perplexity.ai/")
+#
+#         # Store the instance
+#         browser_instances[app_id] = {"browser": browser, "context": context, "page": page}
+#         return browser_instances[app_id]
+#
+#
+# # Async function to run the Playwright logic
+# async def playwright_worker(app_id, query):
+#     try:
+#         user_browser = await get_or_create_browser_instance(app_id, "123.45.67.89", "434")
+#         page = user_browser["page"]
+#
+#         # Perform scraping actions
+#         await page.screenshot(path="perplexity.png")
+#         await page.fill(".overflow-auto", query)
+#         await page.screenshot(path="perplexity1.png")
+#
+#         if await page.is_visible("button[aria-label='Submit']"):
+#             await page.click("button[aria-label='Submit']")
+#             await page.screenshot(path="p4.png")
+#
+#         # Wait and extract response
+#         await page.wait_for_timeout(7000)
+#         return [
+#             await div.inner_text()
+#             for div in await page.query_selector_all("div.prose")
+#         ]
+#     except Exception as e:
+#         return {"error": str(e)}
 
 
 @app.route('/')

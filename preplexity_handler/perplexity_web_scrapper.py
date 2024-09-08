@@ -1,3 +1,4 @@
+import traceback
 from datetime import datetime
 
 from model import User
@@ -34,7 +35,8 @@ class PerplexityHandler:
                 for div in await page.query_selector_all("div.prose")
             ]
         except Exception as e:
-            return {"error": str(e)}
+            traceback_str = traceback.format_exc()
+            return JsonResponse.getErrorResponse(message=f"Error in playwright_worker {e}\n TraceCallBack: {traceback_str}", code=400)
 
 # class PerplexityHandler:
 #
