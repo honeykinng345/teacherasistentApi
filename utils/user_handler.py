@@ -21,21 +21,18 @@ class UserHandler:
             global userObject
 
             if appId not in Global.user_map:
+                userObject = None
                 webDriver = WebDriverHandler(ip="123.45.67.89", port="434")
-
                 getBrowserData = await webDriver.initialize_playwright_instance(appId, webDriver.proxyIp, webDriver.proxyPort)
                 browser = getBrowserData["browser"]
                 page = getBrowserData["page"]
                 context = getBrowserData["context"]
                 Global.user_map[appId] = User(appId, "12345", webDevBrowser=browser, webPage=page, webContext=context)
-                userObject = Global.user_map[appId]
-                return userObject
             else:
                 with open("ScreenFlow.txt", "a") as f:
                     current_datetime = datetime.now()
                     f.write(f"{current_datetime}:getExistingUser()\n{Global.user_map[appId]}")
-                return Global.user_map[appId]
-
+            return Global.user_map[appId]
         except Exception as e:
             return JsonResponse.getErrorResponse(message=f"Error in checkUserAlreadyExistOrNot {e}", code=400)
 
