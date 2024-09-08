@@ -2,6 +2,7 @@ aiofiles==24.1.0
 asgiref==3.8.1
 blinker==1.8.2
 click==8.1.7
+fake-useragent==1.5.1
 Flask==3.0.3
 greenlet==3.0.3
 greenletio==0.11.0
@@ -17,9 +18,8 @@ playwright==1.46.0
 priority==2.0.0
 pyee==11.1.0
 Quart==0.19.6
+six==1.16.0
 typing_extensions==4.12.2
 uvicorn==0.30.6
 Werkzeug==3.0.4
 wsproto==1.2.0
-fake_useragent==1.5.1
-

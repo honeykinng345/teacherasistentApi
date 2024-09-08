@@ -2,6 +2,7 @@ from datetime import datetime
 
 from model.User import User
 from utils.global_objects import Global
+from utils.json_responses import JsonResponse
 from utils.web_driver import WebDriverHandler
 
 userObject: User  # Initialize the global variable at the module level
@@ -36,7 +37,9 @@ class UserHandler:
                 return Global.user_map[appId]
 
         except Exception as e:
-            raise e
+            return JsonResponse.getErrorResponse(message=f"Error in checkUserAlreadyExistOrNot {e}", code=400)
+
+
     #
     # async def playwright_worker(app_id, query):
     #     try:

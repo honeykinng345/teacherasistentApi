@@ -110,7 +110,7 @@ async def amazon_webpage():
         return jsonify({"response": response}), 200
 
     except Exception as e:
-        return jsonify({"error": f"Error {str(e.args[0][0].response[0])}"}), 400
+        return jsonify(f"error: Error {e}"), 400
 
 
 if __name__ == '__main__':

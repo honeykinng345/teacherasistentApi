@@ -50,8 +50,8 @@ class WebDriverHandler:
             user_agent = ua.random
             print(user_agent)
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=True)
-            context = await browser.new_context(user_agent=str(ua), color_scheme='dark')
+            browser = await playwright.chromium.launch(headless=False)
+            context = await browser.new_context(color_scheme='dark')
             page = await context.new_page()
 
             # # Proxy settings
@@ -78,4 +78,4 @@ class WebDriverHandler:
                 current_datetime = datetime.now()
                 f.write(f"{current_datetime}: initialize_playwright_instance Exception\n")
                 f.write(f"{current_datetime}: {str(e)}\n")
-            raise Exception(JsonResponse.getErrorResponse("Something went wrong", 500))
+                return  JsonResponse.getErrorResponse(message=e,code=400)
