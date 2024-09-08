@@ -9,4 +9,4 @@ class JsonResponse:
 
     @classmethod
     def getSuccessResponse(cls, result, message, error, code):
-        return jsonify({"response": result, "message": message, "error": error}), code
+        return jsonify({"response": result, "message": message,}), code

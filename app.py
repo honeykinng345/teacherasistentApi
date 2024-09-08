@@ -101,16 +101,16 @@ async def amazon_webpage():
         return jsonify({"error": "Please provide a query parameter"}), 400
     try:
         userObject = await UserHandler.checkUserAlreadyExistOrNot(app_id)
-        response = await PerplexityHandler.playwright_worker(userObject, query)
+        response = await PerplexityHandler.playwright_worker(user=userObject, query=query)
         # Check if there was an error
         if isinstance(response, dict) and "error" in response:
             return jsonify(response), 400
 
         # Return the scraped response
-        return jsonify({"response": response}), 200
+        return response
 
     except Exception as e:
-        return jsonify(f"error: Error {e}"), 400
+        return jsonify(f"error: Error {e}"), 500
 
 
 if __name__ == '__main__':
