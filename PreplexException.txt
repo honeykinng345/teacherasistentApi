@@ -1,0 +1,436 @@
+2024-09-07 00:53:40.881303: Exception in scrape_amazon_webpage(): 
+cannot switch to a different thread (which happens to have exited)2024-09-07 01:00:06.495271: Exception in scrape_amazon_webpage(): 
+Page.click: Timeout 30000ms exceeded.
+Call log:
+waiting for locator("button[aria-label='Submit']")
+  -   locator resolved to <button type="button" aria-label="Submit" class="bg-super dark:bg-superDark dark:text-backgroundDark text-white hover:opacity-80 font-sans focus:outline-none outline-none outline-transparent transition duration-300 ease-in-out font-sans  select-none items-center relative group/button  justify-center text-center items-center rounded-full cursor-point active:scale-95 origin-center whitespace-nowrap inline-flex text-sm aspect-square h-8">…</button>
+  - attempting click action
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #1
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #2
+  -   waiting 20ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #3
+  -   waiting 100ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #4
+  -   waiting 100ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #5
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #6
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #7
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #8
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #9
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #10
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #11
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #12
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #13
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #14
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #15
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #16
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #17
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #18
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #19
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #20
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #21
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #22
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #23
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #24
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #25
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #26
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #27
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #28
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #29
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #30
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #31
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #32
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #33
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #34
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #35
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #36
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #37
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #38
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #39
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #40
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #41
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #42
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #43
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #44
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #45
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #46
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #47
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #48
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #49
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #50
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #51
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #52
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #53
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #54
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #55
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #56
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #57
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #58
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #59
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #60
+  -   waiting 500ms
+  -   waiting for element to be visible, enabled and stable
+  -   element is visible, enabled and stable
+  -   scrolling into view if needed
+  -   done scrolling
+  -   <div class="rounded-lg p-md shadow-md duration-300 ease-out animate-in fade-in !p-lg border border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">…</div> from <div class="fixed bottom-md right-md z-30 hidden w-[300px] md:block">…</div> subtree intercepts pointer events
+  - retrying click action, attempt #61
+  -   waiting 500ms
+2024-09-07 01:00:28.167982: Exception in scrape_amazon_webpage(): 
+cannot switch to a different thread (which happens to have exited)2024-09-07 01:00:32.536799: Exception in scrape_amazon_webpage(): 
+cannot switch to a different thread (which happens to have exited)2024-09-07 15:45:34.231452: Exception in scrape_amazon_webpage(): 'User' object has no attribute 'response'
