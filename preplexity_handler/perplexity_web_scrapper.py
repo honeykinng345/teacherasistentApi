@@ -30,12 +30,13 @@ class PerplexityHandler:
 
             # Wait and extract response
             await page.wait_for_timeout(7000)
-            responseList = [await div.inner_text() for div in page.query_selector_all("div.prose")]
+            divs = await page.query_selector_all("div.prose")
+            responseList = [await div.inner_text() for div in divs]
             return JsonResponse.getSuccessResponse(responseList, "Received response", 1, 200)
-            # return [
-            #     await div.inner_text()
-            #     for div in await page.query_selector_all("div.prose")
-            # ]
+                # return [
+                #     await div.inner_text()
+                #     for div in await page.query_selector_all("div.prose")
+                # ]
         except Exception as e:
             traceback_str = traceback.format_exc()
             return JsonResponse.getErrorResponse(message=f"Error in playwright_worker {e}\n TraceCallBack: {traceback_str}", code=400)
