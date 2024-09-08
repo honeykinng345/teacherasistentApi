@@ -9,14 +9,19 @@ from utils.json_responses import JsonResponse
 class PerplexityHandler:
 
     @classmethod
-    async def playwright_worker(cls,user: User, query: str):
+    async def playwright_worker(cls, user: User, query: str):
         try:
             page = user.webDriverPage
 
             # Perform scraping actions
             await page.screenshot(path="perplexity.png")
             await page.fill(".overflow-auto", query)
+
             await page.screenshot(path="perplexity1.png")
+
+            time.sleep(2)
+            if await page.is_visible("button svg[data-icon='xmark']"):
+                await page.click("button svg[data-icon='xmark']")
 
             if await page.is_visible("button[aria-label='Submit']"):
                 await page.click("button[aria-label='Submit']")
@@ -24,9 +29,10 @@ class PerplexityHandler:
 
             # Wait and extract response
             await page.wait_for_timeout(7000)
-            response_list = [await div.inner_text() for div in await page.query_selector_all("div.prose")]
-
-            return response_list
+            return [
+                await div.inner_text()
+                for div in await page.query_selector_all("div.prose")
+            ]
         except Exception as e:
             return {"error": str(e)}
 

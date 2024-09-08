@@ -27,7 +27,7 @@ async def get_or_create_browser_instance(app_id, proxy_ip, proxy_port):
         return browser_instances[app_id]
     else:
         playwright = await async_playwright().start()
-        browser = await playwright.chromium.launch(headless=False, args=["--force-dark-mode"])
+        browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
         await page.goto("https://www.perplexity.ai/")
@@ -54,9 +54,10 @@ async def playwright_worker(app_id, query):
 
         # Wait and extract response
         await page.wait_for_timeout(7000)
-        response_list = [await div.inner_text() for div in await page.query_selector_all("div.prose")]
-
-        return response_list
+        return [
+            await div.inner_text()
+            for div in await page.query_selector_all("div.prose")
+        ]
     except Exception as e:
         return {"error": str(e)}
 
@@ -100,7 +101,7 @@ async def amazon_webpage():
         return jsonify({"error": "Please provide a query parameter"}), 400
     try:
         userObject = await UserHandler.checkUserAlreadyExistOrNot(app_id)
-        response = await PerplexityHandler.playwright_worker(userObject,query)
+        response = await PerplexityHandler.playwright_worker(userObject, query)
         # Check if there was an error
         if isinstance(response, dict) and "error" in response:
             return jsonify(response), 400
@@ -109,7 +110,7 @@ async def amazon_webpage():
         return jsonify({"response": response}), 200
 
     except Exception as e:
-        return jsonify({"error": "Error "+str(e.args[0][0].response[0])}), 400
+        return jsonify({"error": f"Error {str(e.args[0][0].response[0])}"}), 400
 
 
 if __name__ == '__main__':

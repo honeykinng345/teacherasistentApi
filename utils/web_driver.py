@@ -5,6 +5,7 @@ import time
 import traceback
 from datetime import datetime
 
+from fake_useragent import UserAgent
 from playwright.async_api import async_playwright
 
 from utils.extension import proxies
@@ -45,9 +46,12 @@ class WebDriverHandler:
                 f.write(f"{current_datetime}: initialize_playwright_instance\n")
 
             # Initialize Playwright
+            ua = UserAgent()
+            user_agent = ua.random
+            print(user_agent)
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=False, args=["--force-dark-mode"])
-            context = await browser.new_context()
+            browser = await playwright.chromium.launch(headless=True)
+            context = await browser.new_context(user_agent=str(ua), color_scheme='dark')
             page = await context.new_page()
 
             # # Proxy settings
