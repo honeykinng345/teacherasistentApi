@@ -21,11 +21,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and its dependencies (browsers)
 RUN playwright install --with-deps
 
-# Copy the rest of the application code to the root directory of the container
-COPY . .
+
 
 # Expose the port your app will run on
-EXPOSE 5000
 
 # Define the command to run your app
-CMD ["python", "app.py"]
+CMD ["gunicorn", "app:app"]
