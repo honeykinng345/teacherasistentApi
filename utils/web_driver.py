@@ -27,7 +27,7 @@ class WebDriverHandler:
         global browser_instances
         if self not in browser_instances:
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=True, args=["--force-dark-mode"])
+            browser = await playwright.chromium.launch(headless=True)
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto("https://www.perplexity.ai/")
@@ -48,10 +48,13 @@ class WebDriverHandler:
                 f.write(f"{current_datetime}: initialize_playwright_instance\n")
 
             print("Enter initialize_playwright_instance")
+            ua = UserAgent()
+            user_agent = ua.random
+            print(user_agent)
             # Initialize Playwright
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=False)
-            context = await browser.new_context()
+            browser = await playwright.chromium.launch(headless=True)
+            context = await browser.new_context(user_agent=user_agent)
             page = await context.new_page()
 
             # # Proxy settings
