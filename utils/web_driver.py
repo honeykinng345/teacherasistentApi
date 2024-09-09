@@ -27,7 +27,7 @@ class WebDriverHandler:
         global browser_instances
         if self not in browser_instances:
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=False, args=["--force-dark-mode"])
+            browser = await playwright.chromium.launch(headless=True, args=["--force-dark-mode"])
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto("https://www.perplexity.ai/")
