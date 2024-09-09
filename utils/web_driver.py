@@ -55,15 +55,15 @@ class WebDriverHandler:
             # Initialize Playwright
             playwright = await async_playwright().start()
             browser = await playwright.chromium.launch(headless=True)
-            context = await browser.new_context(user_agent=user_agent)
+            context = await browser.new_context(user_agent=str(user_agent))
             page = await context.new_page()
 
-            # # Proxy settings
-            # proxy = {
-            #     "server": f"http://{proxyIp}:{proxyPort}",
-            #     "username": "proxy_user",
-            #     "password": "proxy_pass"
-            # }
+            # Proxy settings
+            proxy = {
+                "server": f"http://{proxyIp}:{proxyPort}",
+                "username": "proxy_user",
+                "password": "proxy_pass"
+            }
 
             # browser = playwright.chromium.launch(headless=False, args=["--force-dark-mode"])  # Enable dark mode)
             #
