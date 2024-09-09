@@ -62,7 +62,11 @@ class WebDriverHandler:
                 "--disable-web-security",  # Disable web security
                 "--disable-features=WebRTC",  # Disable WebRTC
                 "--window-size=1920,1080",  # Window size
-            ])
+            ], proxy={
+                "server": "http://gw.dataimpulse.com:10049",
+                "username": "6e4162a6906dc79e20fa",
+                "password": "33e81c17912ec20d"
+            })
             context = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                                                            "AppleWebKit/537.36 (KHTML, like Gecko) "
                                                            "Chrome/91.0.4472.124 Safari/537.36",
