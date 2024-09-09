@@ -63,7 +63,9 @@ class WebDriverHandler:
                 "--disable-features=WebRTC",  # Disable WebRTC
                 "--window-size=1920,1080",  # Window size
             ])
-            context = await browser.new_context(user_agent=str(user_agent),
+            context = await browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                                           "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                                           "Chrome/91.0.4472.124 Safari/537.36",
                                                 viewport={"width": 1920, "height": 1080},  # Set window size
                                                 java_script_enabled=True)  # Enable JS for proper page loading)
             page = await context.new_page()
