@@ -54,7 +54,11 @@ class WebDriverHandler:
             print(user_agent)
             # Initialize Playwright
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=True)
+            browser = await playwright.chromium.launch(headless=True, proxy={
+                "server": "http://gw.dataimpulse.com:823",
+                "username": "6e4162a6906dc79e20fa",
+                "password": "33e81c17912ec20d"
+            })
             context = await browser.new_context(user_agent=str(user_agent))
             page = await context.new_page()
 
