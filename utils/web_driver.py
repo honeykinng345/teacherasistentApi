@@ -54,16 +54,7 @@ class WebDriverHandler:
             print(user_agent)
             # Initialize Playwright
             playwright = await async_playwright().start()
-            browser = await playwright.chromium.launch(headless=True, args=[
-                "--force-dark-mode",  # Enable dark mode
-                "--disable-gpu",  # Disable GPU
-                "--no-sandbox",  # No sandbox for security bypass
-                "--disable-blink-features=AutomationControlled",  # Disable automation control
-                "--disable-web-security",  # Disable web security
-                "--disable-features=WebRTC",  # Disable WebRTC
-                "--window-size=1920x1080",  # Window size
-                "start-maximized"  # Start maximized
-            ])
+            browser = await playwright.chromium.launch(headless=True)
             context = await browser.new_context(user_agent=str(user_agent),
                                                 viewport={"width": 1920, "height": 1080},  # Set window size
                                                 java_script_enabled=True)  # Enable JS for proper page loading)
