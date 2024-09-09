@@ -1,3 +1,4 @@
+import base64
 import json
 import os
 import random
@@ -74,6 +75,13 @@ class WebDriverHandler:
             print(dictBrowser)
 
             await page.goto("https://www.perplexity.ai/")
+
+            screenshot_bytes = await page.screenshot(path="perplexity.png")
+
+            encoded_screenshot = base64.b64encode(screenshot_bytes).decode()
+
+            # Log it so you can see the base64 data in Render logs
+            print(f"Screenshot (base64When Lunch): {encoded_screenshot}")
 
             return dictBrowser
 

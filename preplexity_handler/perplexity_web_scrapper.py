@@ -1,3 +1,4 @@
+import base64
 import traceback
 from datetime import datetime
 
@@ -15,7 +16,13 @@ class PerplexityHandler:
             page = user.webDriverPage
 
             # Perform scraping actions
-            await page.screenshot(path="perplexity.png")
+            screenshot_bytes = await page.screenshot(path="perplexity.png")
+
+            encoded_screenshot = base64.b64encode(screenshot_bytes).decode()
+
+            # Log it so you can see the base64 data in Render logs
+            print(f"Screenshot (base64): {encoded_screenshot}")
+            await page.wait_for_selector(".overflow-auto", timeout=60000)  # wait for up to 60 seconds
             await page.fill(".overflow-auto", query)
 
             await page.screenshot(path="perplexity1.png")
