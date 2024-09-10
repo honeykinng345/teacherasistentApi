@@ -1,41 +1,10 @@
-2024-09-07 00:53:40.879503: initialize_playwright_instance
-2024-09-07 00:53:40.879735:getExistingUser()
-<model.User.User object at 0x107bd76e0>2024-09-07 00:58:46.540379: initialize_playwright_instance
-2024-09-07 00:58:46.540559: initialize_playwright_instance
-2024-09-07 00:59:30.647278: initialize_playwright_instance
-2024-09-07 00:59:30.647424: initialize_playwright_instance
-2024-09-07 01:00:28.165240: initialize_playwright_instance
-2024-09-07 01:00:28.165504:getExistingUser()
-<model.User.User object at 0x107e295e0>2024-09-07 01:00:32.535057: initialize_playwright_instance
-2024-09-07 01:00:32.535207:getExistingUser()
-<model.User.User object at 0x107e295e0>2024-09-07 15:45:29.132145: initialize_playwright_instance
-2024-09-07 15:45:29.133237: initialize_playwright_instance
-2024-09-07 15:50:41.198729: initialize_playwright_instance
-2024-09-07 15:50:41.199914: initialize_playwright_instance
-2024-09-07 15:53:21.752321: initialize_playwright_instance
-2024-09-07 15:53:21.753752: initialize_playwright_instance
-2024-09-07 15:54:04.486811: initialize_playwright_instance
-2024-09-07 15:54:04.486987:getExistingUser()
-<model.User.User object at 0x10280fbc0>2024-09-07 15:56:58.348787: initialize_playwright_instance
-2024-09-07 15:56:58.349779: initialize_playwright_instance
-2024-09-07 15:58:01.165357: initialize_playwright_instance
-2024-09-07 15:58:01.165527: initialize_playwright_instance
-2024-09-07 16:00:16.414268: initialize_playwright_instance
-2024-09-07 16:00:16.414487: initialize_playwright_instance
-2024-09-07 19:35:51.808368: initialize_playwright_instance
-2024-09-07 19:35:51.809424: initialize_playwright_instance
-2024-09-07 19:36:30.530367: initialize_playwright_instance
-2024-09-07 19:36:30.530523:getExistingUser()
-<model.User.User object at 0x104eee9c0>2024-09-07 19:39:33.928211: initialize_playwright_instance
-2024-09-07 19:39:33.928569: initialize_playwright_instance
-2024-09-07 19:40:59.458738: initialize_playwright_instance
-2024-09-07 19:40:59.459186:getExistingUser()
-<model.User.User object at 0x10275bad0>2024-09-07 19:42:48.787400: initialize_playwright_instance
-2024-09-07 19:42:48.787853:getExistingUser()
-<model.User.User object at 0x10275bad0>2024-09-07 20:06:21.275335: initialize_playwright_instance
-2024-09-07 20:06:21.275608: initialize_playwright_instance
-2024-09-07 20:06:48.899265: initialize_playwright_instance
-2024-09-07 20:06:48.899427: initialize_playwright_instance
-2024-09-07 20:07:20.357749: initialize_playwright_instance
-2024-09-07 20:07:20.357906:getExistingUser()
-<model.User.User object at 0x10f5ae6c0>
+2024-09-09 16:36:18.755018: initialize_playwright_instance
+2024-09-09 16:36:18.755432: initialize_playwright_instance
+2024-09-09 18:55:03.856374: initialize_playwright_instance
+2024-09-09 18:55:03.856810: initialize_playwright_instance
+2024-09-09 18:55:04.819812: initialize_playwright_instance Exception
+2024-09-09 18:55:04.819812: BrowserType.launch: Arguments can not specify page to be opened
+2024-09-09 18:56:34.455710: initialize_playwright_instance
+2024-09-09 18:56:34.456426: initialize_playwright_instance
+2024-09-10 20:33:19.554867: initialize_playwright_instance
+2024-09-10 20:47:00.802760: initialize_playwright_instance

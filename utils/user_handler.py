@@ -9,7 +9,6 @@ userObject: User  # Initialize the global variable at the module level
 
 
 class UserHandler:
-    userObject: User
 
     @classmethod
     async def checkUserAlreadyExistOrNot(cls, appId):
@@ -23,11 +22,13 @@ class UserHandler:
             if appId not in Global.user_map:
                 userObject = None
                 webDriver = WebDriverHandler(ip="123.45.67.89", port="434")
-                getBrowserData = await webDriver.initialize_playwright_instance(appId, webDriver.proxyIp, webDriver.proxyPort)
+                getBrowserData = await webDriver.initialize_playwright_instance(appId, webDriver.proxyIp,
+                                                                                webDriver.proxyPort)
                 browser = getBrowserData["browser"]
                 page = getBrowserData["page"]
                 context = getBrowserData["context"]
-                Global.user_map[appId] = User(appId, "12345", webDevBrowser=browser, webPage=page, webContext=context)
+                Global.user_map[appId] = User(appId, "12345", webDevBrowser=browser, webPage=page, webContext=context,
+                                              dateTime=datetime.now())
 
             else:
                 with open("ScreenFlow.txt", "a") as f:
@@ -36,7 +37,6 @@ class UserHandler:
             return Global.user_map[appId]
         except Exception as e:
             return JsonResponse.getErrorResponse(message=f"Error in checkUserAlreadyExistOrNot {e}", code=400)
-
 
     #
     # async def playwright_worker(app_id, query):
