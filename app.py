@@ -1,8 +1,4 @@
 from quart import Quart, jsonify, request
-from threading import Thread
-import asyncio
-from datetime import datetime
-from playwright.async_api import async_playwright
 import logging
 
 from model.User import User
@@ -13,19 +9,18 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Quart(__name__)
 
-timeInterval: int = 0
-
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=StaticFunctions.checkProxyServerWorkingOrNot, trigger="interval", seconds=7200)
 scheduler.add_job(func=StaticFunctions.JobCheckUserSession, trigger="interval", seconds=900)
+scheduler.add_job(func=StaticFunctions.JobInteractWithWebPage, trigger="interval", seconds=20)
 
 scheduler.start()
 
-StaticFunctions.checkProxyServerWorkingOrNot()
+
+#StaticFunctions.checkProxyServerWorkingOrNot()
 
 
 @app.route('/')
@@ -50,12 +45,6 @@ async def amazon_webpage():
             # this object has error now
             return userObject
 
-        #
-        #
-        # # Check if there was an error
-        # if isinstance(response, dict) and "error" in response:
-        #     return jsonify(response), 400
-
         # Return the scraped response
         return response
 
@@ -65,3 +54,5 @@ async def amazon_webpage():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
+

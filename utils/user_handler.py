@@ -28,12 +28,15 @@ class UserHandler:
                 page = getBrowserData["page"]
                 context = getBrowserData["context"]
                 Global.user_map[appId] = User(appId, "12345", webDevBrowser=browser, webPage=page, webContext=context,
-                                              dateTime=datetime.now())
+                                              dateTime=datetime.now(), firstAttempt=True)
 
             else:
                 with open("ScreenFlow.txt", "a") as f:
                     current_datetime = datetime.now()
                     f.write(f"{current_datetime}:getExistingUser()\n{Global.user_map[appId]}")
+
+                Global.user_map[appId].fistTime = False
+
             return Global.user_map[appId]
         except Exception as e:
             return JsonResponse.getErrorResponse(message=f"Error in checkUserAlreadyExistOrNot {e}", code=400)

@@ -8,3 +8,331 @@
 2024-09-09 18:56:34.456426: initialize_playwright_instance
 2024-09-10 20:33:19.554867: initialize_playwright_instance
 2024-09-10 20:47:00.802760: initialize_playwright_instance
+2024-09-10 21:14:43.308620: initialize_playwright_instance
+2024-09-10 21:17:03.907498: initialize_playwright_instance
+2024-09-10 21:20:33.301578: initialize_playwright_instance
+2024-09-10 21:23:32.112487: initialize_playwright_instance
+2024-09-10 21:28:06.253824: initialize_playwright_instance
+2024-09-10 21:28:38.292077: initialize_playwright_instance Exception
+2024-09-10 21:28:38.292077: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://webcache.googleusercontent.com/search?q=cache:https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:33:37.747970: initialize_playwright_instance
+2024-09-10 21:48:38.229102: initialize_playwright_instance
+2024-09-10 21:48:40.583433: initialize_playwright_instance Exception
+2024-09-10 21:48:40.583433: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:50:41.625773: initialize_playwright_instance
+2024-09-10 21:50:43.047733: initialize_playwright_instance Exception
+2024-09-10 21:50:43.047733: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:52:07.366151: initialize_playwright_instance
+2024-09-10 21:52:09.266038: initialize_playwright_instance Exception
+2024-09-10 21:52:09.266038: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:53:07.834460: initialize_playwright_instance
+2024-09-10 21:53:09.371368: initialize_playwright_instance Exception
+2024-09-10 21:53:09.371368: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:54:13.909581: initialize_playwright_instance
+2024-09-10 21:54:45.887294: initialize_playwright_instance Exception
+2024-09-10 21:54:45.887294: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 21:56:00.733952: initialize_playwright_instance
+2024-09-10 21:59:45.692766: initialize_playwright_instance
+2024-09-10 22:01:12.680061: initialize_playwright_instance
+2024-09-10 22:01:12.681255:getExistingUser()
+<model.User.User object at 0x10c86c800>2024-09-10 22:03:10.142011: initialize_playwright_instance
+2024-09-10 22:18:39.243056: initialize_playwright_instance
+2024-09-10 22:18:39.244215: initialize_playwright_instance Exception
+2024-09-10 22:18:39.244215: Cannot choose from an empty sequence
+2024-09-10 22:19:25.739739: initialize_playwright_instance
+2024-09-10 22:25:06.469451: initialize_playwright_instance
+2024-09-10 22:27:56.872950: initialize_playwright_instance
+2024-09-10 22:31:44.861983: initialize_playwright_instance
+2024-09-10 22:33:39.702971: initialize_playwright_instance
+2024-09-10 22:34:11.837863: initialize_playwright_instance Exception
+2024-09-10 22:34:11.837863: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 22:34:39.727351: initialize_playwright_instance
+2024-09-10 22:35:10.802794: initialize_playwright_instance Exception
+2024-09-10 22:35:10.802794: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 22:36:09.327623: initialize_playwright_instance
+2024-09-10 22:37:29.344776: initialize_playwright_instance
+2024-09-10 22:39:03.320673: initialize_playwright_instance
+2024-09-10 22:40:42.017066: initialize_playwright_instance
+2024-09-10 22:41:59.733506: initialize_playwright_instance
+2024-09-10 22:47:00.937120: initialize_playwright_instance
+2024-09-10 22:47:31.939071: initialize_playwright_instance Exception
+2024-09-10 22:47:31.939071: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-10 22:48:37.734749: initialize_playwright_instance
+2024-09-10 22:49:39.097908: initialize_playwright_instance
+2024-09-10 22:50:10.098701: initialize_playwright_instance Exception
+2024-09-10 22:50:10.098701: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 14:49:57.109502: initialize_playwright_instance
+2024-09-11 14:50:05.477108: initialize_playwright_instance Exception
+2024-09-11 14:50:05.477108: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 14:50:39.125769: initialize_playwright_instance
+2024-09-11 14:50:40.396567: initialize_playwright_instance Exception
+2024-09-11 14:50:40.396567: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 14:53:27.802319: initialize_playwright_instance
+2024-09-11 14:53:29.153955: initialize_playwright_instance Exception
+2024-09-11 14:53:29.153955: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 14:54:07.880147: initialize_playwright_instance
+2024-09-11 14:57:07.591046: initialize_playwright_instance
+2024-09-11 14:57:24.451065: initialize_playwright_instance Exception
+2024-09-11 14:57:24.451065: Page.goto: net::ERR_EMPTY_RESPONSE at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 15:03:17.742224: initialize_playwright_instance
+2024-09-11 15:05:49.645182: initialize_playwright_instance
+2024-09-11 15:06:56.383398: initialize_playwright_instance
+2024-09-11 15:36:35.889089: initialize_playwright_instance
+2024-09-11 15:37:57.636168: initialize_playwright_instance
+2024-09-11 15:38:02.172466: initialize_playwright_instance Exception
+2024-09-11 15:38:02.172466: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 15:38:19.316835: initialize_playwright_instance
+2024-09-11 15:39:14.442121: initialize_playwright_instance
+2024-09-11 15:39:14.443188:getExistingUser()
+<model.User.User object at 0x103f28530>2024-09-11 15:42:33.696796: initialize_playwright_instance
+2024-09-11 15:42:33.698726:getExistingUser()
+<model.User.User object at 0x103f28530>2024-09-11 15:46:21.874488: initialize_playwright_instance
+2024-09-11 15:46:55.930576: initialize_playwright_instance Exception
+2024-09-11 15:46:55.930576: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-11 16:14:28.943249: initialize_playwright_instance
+2024-09-11 16:18:59.988292: initialize_playwright_instance
+2024-09-11 16:23:48.601693: initialize_playwright_instance
+2024-09-11 16:26:24.114386: initialize_playwright_instance
+2024-09-11 16:27:23.264958: initialize_playwright_instance
+2024-09-11 16:36:30.801721: initialize_playwright_instance
+2024-09-11 16:40:53.126041: initialize_playwright_instance
+2024-09-11 16:43:06.519290: initialize_playwright_instance
+2024-09-11 17:07:43.489000: initialize_playwright_instance
+2024-09-11 17:30:41.588586: initialize_playwright_instance
+2024-09-11 22:02:52.016340: initialize_playwright_instance
+2024-09-11 22:10:21.243414: initialize_playwright_instance
+2024-09-11 22:18:19.196827: initialize_playwright_instance
+2024-09-11 22:28:24.671431: initialize_playwright_instance
+2024-09-11 22:30:44.305852: initialize_playwright_instance
+2024-09-11 22:34:40.048828: initialize_playwright_instance
+2024-09-11 22:39:24.681265: initialize_playwright_instance
+2024-09-11 22:46:32.919170: initialize_playwright_instance
+2024-09-11 22:47:41.434399: initialize_playwright_instance
+2024-09-11 22:48:19.902570: initialize_playwright_instance
+2024-09-11 22:48:20.269688: initialize_playwright_instance Exception
+2024-09-11 22:48:20.269688: BrowserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/rehan/Library/Caches/ms-playwright/chromium-1129/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-use-zoom-for-dsf=false --use-angle --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://gw.dataimpulse.com:823 --proxy-bypass-list=<-loopback> --dump-dom --disable-webrtc --user-data-dir=/var/folders/km/8nvsjynx4l399wt44df0t4wr0000gp/T/playwright_chromiumdev_profile-TigYekuqEeGg --remote-debugging-pipe --no-startup-window
+<launched> pid=16447
+[pid=16447][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+[pid=16447][err] 
+[pid=16447][err] [0911/224820.260678:ERROR:headless_shell.cc(221)] Headless commands are not compatible with remote debugging.
+[pid=16447] <process did exit: exitCode=1, signal=null>
+[pid=16447] starting temporary directories cleanup
+Call log:
+<launching> /Users/rehan/Library/Caches/ms-playwright/chromium-1129/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-use-zoom-for-dsf=false --use-angle --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://gw.dataimpulse.com:823 --proxy-bypass-list=<-loopback> --dump-dom --disable-webrtc --user-data-dir=/var/folders/km/8nvsjynx4l399wt44df0t4wr0000gp/T/playwright_chromiumdev_profile-TigYekuqEeGg --remote-debugging-pipe --no-startup-window
+  - <launched> pid=16447
+  - [pid=16447][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+  - [pid=16447][err] 
+  - [pid=16447][err] [0911/224820.260678:ERROR:headless_shell.cc(221)] Headless commands are not compatible with remote debugging.
+  - [pid=16447] <process did exit: exitCode=1, signal=null>
+  - [pid=16447] starting temporary directories cleanup
+
+2024-09-11 22:49:14.030360: initialize_playwright_instance
+2024-09-11 22:52:39.052774: initialize_playwright_instance
+2024-09-11 22:56:55.407263: initialize_playwright_instance
+2024-09-11 22:56:55.408338: initialize_playwright_instance
+2024-09-11 22:58:30.474757: initialize_playwright_instance
+2024-09-11 22:58:30.475483:getExistingUser()
+<model.User.User object at 0x112978800>2024-09-11 22:59:01.039868: initialize_playwright_instance
+2024-09-11 22:59:01.040162:getExistingUser()
+<model.User.User object at 0x112978800>2024-09-11 22:59:32.348856: initialize_playwright_instance
+2024-09-11 22:59:32.349895:getExistingUser()
+<model.User.User object at 0x112978800>2024-09-11 23:04:26.901780: initialize_playwright_instance
+2024-09-11 23:04:26.902316: initialize_playwright_instance
+2024-09-11 23:05:28.568912: initialize_playwright_instance
+2024-09-11 23:05:28.569999: initialize_playwright_instance
+2024-09-11 23:06:32.608489: initialize_playwright_instance
+2024-09-11 23:06:32.608647:getExistingUser()
+<model.User.User object at 0x112170590>2024-09-11 23:07:01.992290: initialize_playwright_instance
+2024-09-11 23:07:02.010633: initialize_playwright_instance
+2024-09-11 23:08:08.148728: initialize_playwright_instance
+2024-09-11 23:08:08.149477: initialize_playwright_instance
+2024-09-12 00:36:16.700846: initialize_playwright_instance
+2024-09-12 00:36:16.701727: initialize_playwright_instance
+2024-09-12 00:36:57.914628: initialize_playwright_instance
+2024-09-12 00:36:57.914797: initialize_playwright_instance
+2024-09-12 00:37:53.955964: initialize_playwright_instance
+2024-09-12 00:37:53.956169:getExistingUser()
+<model.User.User object at 0x101dd8140>2024-09-12 00:38:30.158571: initialize_playwright_instance
+2024-09-12 00:38:33.715922: initialize_playwright_instance
+2024-09-12 00:39:24.775383: initialize_playwright_instance
+2024-09-12 00:39:24.775552:getExistingUser()
+<model.User.User object at 0x101dd8140>2024-09-12 00:40:39.131188: initialize_playwright_instance
+2024-09-12 00:40:39.131395:getExistingUser()
+<model.User.User object at 0x101dd8140>2024-09-12 00:55:44.993187: initialize_playwright_instance
+2024-09-12 00:55:44.993487: initialize_playwright_instance
+2024-09-12 00:56:41.945227: initialize_playwright_instance Exception
+2024-09-12 00:56:41.945227: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 00:58:17.036442: initialize_playwright_instance
+2024-09-12 00:58:17.036964: initialize_playwright_instance
+2024-09-12 01:00:01.009269: initialize_playwright_instance
+2024-09-12 01:00:01.009434: initialize_playwright_instance
+2024-09-12 01:18:51.368273: initialize_playwright_instance
+2024-09-12 01:18:51.368459: initialize_playwright_instance
+2024-09-12 01:35:16.394677: initialize_playwright_instance
+2024-09-12 01:35:16.394883: initialize_playwright_instance
+2024-09-12 01:36:14.803575: initialize_playwright_instance
+2024-09-12 01:36:14.803737: initialize_playwright_instance
+2024-09-12 01:37:07.283068: initialize_playwright_instance
+2024-09-12 01:37:07.283324:getExistingUser()
+<model.User.User object at 0x1067aacc0>2024-09-12 02:19:13.145796: initialize_playwright_instance
+2024-09-12 02:19:13.146109: initialize_playwright_instance
+2024-09-12 02:19:13.584988: initialize_playwright_instance Exception
+2024-09-12 02:19:13.584988: 'str' object has no attribute 'ip'
+2024-09-12 02:19:40.619786: initialize_playwright_instance
+2024-09-12 02:19:40.619995: initialize_playwright_instance
+2024-09-12 02:19:40.953859: initialize_playwright_instance Exception
+2024-09-12 02:19:40.953859: 'str' object has no attribute 'ip'
+2024-09-12 02:22:47.657713: initialize_playwright_instance
+2024-09-12 02:22:47.657905: initialize_playwright_instance
+2024-09-12 02:22:50.261321: initialize_playwright_instance Exception
+2024-09-12 02:22:50.261321: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 02:23:15.885684: initialize_playwright_instance
+2024-09-12 02:23:15.885871: initialize_playwright_instance
+2024-09-12 02:23:17.872226: initialize_playwright_instance Exception
+2024-09-12 02:23:17.872226: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.perplexity.ai/
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 02:24:13.088540: initialize_playwright_instance
+2024-09-12 02:24:13.088711: initialize_playwright_instance
+2024-09-12 02:25:03.533370: initialize_playwright_instance
+2024-09-12 02:25:03.533643:getExistingUser()
+<model.User.User object at 0x10af07bc0>2024-09-12 02:25:29.164310: initialize_playwright_instance
+2024-09-12 02:25:29.164477:getExistingUser()
+<model.User.User object at 0x10af07bc0>2024-09-12 02:26:16.858945: initialize_playwright_instance
+2024-09-12 02:26:16.859148: initialize_playwright_instance
+2024-09-12 02:27:20.007243: initialize_playwright_instance
+2024-09-12 02:27:20.007570:getExistingUser()
+<model.User.User object at 0x10af07bc0>2024-09-12 02:32:03.888932: initialize_playwright_instance
+2024-09-12 02:32:03.889086: initialize_playwright_instance
+2024-09-12 02:33:24.290394: initialize_playwright_instance
+2024-09-12 02:33:24.290551:getExistingUser()
+<model.User.User object at 0x10c5bee40>2024-09-12 02:34:05.256816: initialize_playwright_instance
+2024-09-12 02:34:05.256980: initialize_playwright_instance
+2024-09-12 02:35:01.502566: initialize_playwright_instance
+2024-09-12 02:35:01.503680:getExistingUser()
+<model.User.User object at 0x10ec4b410>2024-09-12 02:35:59.072717: initialize_playwright_instance
+2024-09-12 02:35:59.072876:getExistingUser()
+<model.User.User object at 0x10c5bee40>2024-09-12 02:36:51.714618: initialize_playwright_instance
+2024-09-12 02:36:51.715684:getExistingUser()
+<model.User.User object at 0x10c5bee40>2024-09-12 10:02:39.372842: initialize_playwright_instance
+2024-09-12 10:02:39.373978: initialize_playwright_instance
+2024-09-12 10:03:12.792069: initialize_playwright_instance Exception
+2024-09-12 10:03:12.792069: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 10:03:27.627357: initialize_playwright_instance
+2024-09-12 10:03:27.628536: initialize_playwright_instance
+2024-09-12 10:03:59.090160: initialize_playwright_instance Exception
+2024-09-12 10:03:59.090160: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 10:05:21.979021: initialize_playwright_instance
+2024-09-12 10:05:21.979642: initialize_playwright_instance
+2024-09-12 10:05:53.335410: initialize_playwright_instance Exception
+2024-09-12 10:05:53.335410: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 10:06:16.713735: initialize_playwright_instance
+2024-09-12 10:06:16.713908: initialize_playwright_instance
+2024-09-12 10:06:47.923880: initialize_playwright_instance Exception
+2024-09-12 10:06:47.923880: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 10:08:07.771799: initialize_playwright_instance
+2024-09-12 10:08:07.771976: initialize_playwright_instance
+2024-09-12 10:09:33.384881: initialize_playwright_instance
+2024-09-12 10:09:33.385038:getExistingUser()
+<model.User.User object at 0x10ec7f710>2024-09-12 10:10:55.495527: initialize_playwright_instance
+2024-09-12 10:10:55.495690: initialize_playwright_instance
+2024-09-12 10:11:56.799526: initialize_playwright_instance Exception
+2024-09-12 10:11:56.799526: Page.goto: Timeout 60000ms exceeded.
+Call log:
+navigating to "https://www.perplexity.ai/", waiting until "load"
+
+2024-09-12 10:12:31.663804: initialize_playwright_instance
+2024-09-12 10:12:31.663994: initialize_playwright_instance
+2024-09-12 10:18:45.161736: initialize_playwright_instance
+2024-09-12 10:18:45.162953:getExistingUser()
+<model.User.User object at 0x10ec7f710>2024-09-12 10:19:25.340548: initialize_playwright_instance
+2024-09-12 10:19:25.342635:getExistingUser()
+<model.User.User object at 0x10f541700>2024-09-14 21:45:51.201283: initialize_playwright_instance
+2024-09-14 21:45:51.202161: initialize_playwright_instance
+2024-09-14 21:48:09.379862: initialize_playwright_instance
+2024-09-14 21:48:09.380042:getExistingUser()
+<model.User.User object at 0x1103a0950>2024-09-14 21:48:37.805675: initialize_playwright_instance
+2024-09-14 21:48:37.805865:getExistingUser()
+<model.User.User object at 0x1103a0950>2024-09-14 21:49:48.302278: initialize_playwright_instance
+2024-09-14 21:49:48.302532:getExistingUser()
+<model.User.User object at 0x1103a0950>2024-09-14 21:49:55.509124: initialize_playwright_instance
+2024-09-14 21:49:55.509293: initialize_playwright_instance
+2024-09-14 21:52:14.075042: initialize_playwright_instance
+2024-09-14 21:52:14.075277:getExistingUser()
+<model.User.User object at 0x11070fc20>2024-09-14 21:54:14.385510: initialize_playwright_instance
+2024-09-14 21:54:14.385664: initialize_playwright_instance
+2024-09-14 21:56:56.983821: initialize_playwright_instance
+2024-09-14 21:56:56.984009:getExistingUser()
+<model.User.User object at 0x104d33e00>2024-09-14 21:58:22.938017: initialize_playwright_instance
+2024-09-14 21:58:22.938205:getExistingUser()
+<model.User.User object at 0x104d33e00>
